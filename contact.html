@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — MiMoCode</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <header>
+    <div class="header-wrap">
+      <a href="index.html" class="logo">MiMoCode</a>
+      <button class="mobile-menu" aria-label="Меню"><span></span><span></span><span></span></button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="min-height:50vh">
+      <div class="fade-in">
+        <h1>Свяжитесь с <span>нами</span></h1>
+        <p>Готовы обсудить ваш проект? Мы всегда на связи</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info fade-in">
+            <h2>Контактная информация</h2>
+            <p>Выберите удобный способ связи. Мы ответим в ближайшее время и поможем определить лучшее решение для ваших задач.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                <div class="contact-method-text">
+                  <h4>Email</h4>
+                  <p>kirya.m2007@inbox.ru</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div class="contact-method-text">
+                  <h4>Телефон</h4>
+                  <p>8 (952) 388-88-08</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                <div class="contact-method-text">
+                  <h4>Telegram</h4>
+                  <p>@kirya_m2007</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-method-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div class="contact-method-text">
+                  <h4>Время работы</h4>
+                  <p>Пн-Пт: 10:00 - 19:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form fade-in">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" required placeholder="Как вас зовут?">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+            </div>
+            <div class="form-group">
+              <label for="project">Тип проекта</label>
+              <input type="text" id="project" name="project" placeholder="Сайт, Telegram-бот, другое">
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" required placeholder="Расскажите о вашем проекте..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить сообщение</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <a href="index.html" class="logo">MiMoCode</a>
+      <div class="footer-links">
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 MiMoCode. Все права защищены.</p>
+    </div>
+  </footer>
+  <script>
+    const canvas=document.getElementById('particles');const ctx=canvas.getContext('2d');let particles=[];let mouse={x:null,y:null};function resize(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;}function createParticles(){particles=[];for(let i=0;i<80;i++){particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,size:Math.random()*2+1,speedX:(Math.random()-0.5)*0.5,speedY:(Math.random()-0.5)*0.5,opacity:Math.random()*0.5+0.2});}}function animate(){ctx.clearRect(0,0,canvas.width,canvas.height);particles.forEach(p=>{p.x+=p.speedX;p.y+=p.speedY;if(mouse.x!=null){const dx=mouse.x-p.x;const dy=mouse.y-p.y;const d=Math.sqrt(dx*dx+dy*dy);if(d<150){p.x-=(dx/d)*((150-d)/150)*0.5;p.y-=(dy/d)*((150-d)/150)*0.5;}}if(p.x<0||p.x>canvas.width)p.speedX*=-1;if(p.y<0||p.y>canvas.height)p.speedY*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fillStyle=`rgba(108,92,231,${p.opacity})`;ctx.fill();});for(let i=0;i<particles.length;i++){for(let j=i+1;j<particles.length;j++){const dx=particles[i].x-particles[j].x;const dy=particles[i].y-particles[j].y;const d=Math.sqrt(dx*dx+dy*dy);if(d<120){ctx.beginPath();ctx.strokeStyle=`rgba(108,92,231,${(1-d/120)*0.3})`;ctx.lineWidth=0.5;ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.stroke();}}}requestAnimationFrame(animate);}resize();createParticles();animate();window.addEventListener('resize',()=>{resize();createParticles();});window.addEventListener('mousemove',e=>{mouse.x=e.x;mouse.y=e.y;});
+    document.addEventListener('DOMContentLoaded',()=>{const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.1});document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));const btn=document.querySelector('.mobile-menu');const nav=document.querySelector('nav');if(btn&&nav){btn.addEventListener('click',()=>nav.classList.toggle('active'));document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('active')));}
+    const form=document.querySelector('.contact-form');if(form){form.addEventListener('submit',e=>{e.preventDefault();alert('Спасибо за обращение! Мы свяжемся с вами в ближайшее время.');form.reset();});}});
+  </script>
+  <script src="js/effects.js"></script>
+</body>
+</html>

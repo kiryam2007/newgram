@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги — MiMoCode</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <header>
+    <div class="header-wrap">
+      <a href="index.html" class="logo">MiMoCode</a>
+      <button class="mobile-menu" aria-label="Меню"><span></span><span></span><span></span></button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="min-height:50vh">
+      <div class="fade-in">
+        <h1>Наши <span>услуги</span></h1>
+        <p>Полный цикл разработки цифровых продуктов для вашего бизнеса</p>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="service-detail fade-in">
+          <div class="service-header">
+            <div class="service-header-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+            <h2>Создание сайтов под ключ</h2>
+          </div>
+          <p>Мы создаем современные, быстрые и привлекательные сайты, которые помогают вашему бизнесу расти. От простых лендингов до сложных интернет-магазинов — мы берём на себя весь процесс: от идеи и дизайна до разработки и запуска.</p>
+          <p>Каждый сайт разрабатывается с учетом ваших целей и потребностей аудитории. Мы используем современные технологии для обеспечения быстрой загрузки, адаптивности на всех устройствах и удобства использования.</p>
+          <div class="service-features">
+            <div class="service-feature">Адаптивный дизайн для всех устройств</div>
+            <div class="service-feature">SEO-оптимизация для продвижения</div>
+            <div class="service-feature">Интеграция с CRM и аналитикой</div>
+            <div class="service-feature">Система управления контентом</div>
+            <div class="service-feature">Безопасность и защита данных</div>
+            <div class="service-feature">Техническая поддержка после запуска</div>
+          </div>
+        </div>
+        <div class="service-detail fade-in">
+          <div class="service-header">
+            <div class="service-header-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="12" y1="7" x2="12" y2="13"/></svg></div>
+            <h2>Telegram-боты</h2>
+          </div>
+          <p>Telegram-боты — мощный инструмент для автоматизации бизнес-процессов и взаимодействия с клиентами. Мы создаем ботов любой сложности: от простых информационных ботов до сложных систем с интеграцией базы данных и внешними API.</p>
+          <p>Боты могут работать 24/7, обрабатывать множество запросов одновременно и значительно снижать нагрузку на вашу команду. Это современное решение для эффективного ведения бизнеса.</p>
+          <div class="service-features">
+            <div class="service-feature">Автоматическая обработка заявок</div>
+            <div class="service-feature">Интеграция с вашими системами</div>
+            <div class="service-feature">Личный кабинет и аналитика</div>
+            <div class="service-feature">Оплата прямо в боте</div>
+            <div class="service-feature">Мультиязычность</div>
+            <div class="service-feature">Поддержка и обновления</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h2 class="fade-in">Готовы обсудить ваш проект?</h2>
+        <p class="fade-in">Свяжитесь с нами для бесплатной консультации. Мы поможем определить лучшее решение для ваших задач.</p>
+        <a href="contact.html" class="btn fade-in">Получить консультацию</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-wrap">
+      <a href="index.html" class="logo">MiMoCode</a>
+      <div class="footer-links">
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 MiMoCode. Все права защищены.</p>
+    </div>
+  </footer>
+  <script>
+    const canvas=document.getElementById('particles');const ctx=canvas.getContext('2d');let particles=[];let mouse={x:null,y:null};function resize(){canvas.width=window.innerWidth;canvas.height=window.innerHeight;}function createParticles(){particles=[];for(let i=0;i<80;i++){particles.push({x:Math.random()*canvas.width,y:Math.random()*canvas.height,size:Math.random()*2+1,speedX:(Math.random()-0.5)*0.5,speedY:(Math.random()-0.5)*0.5,opacity:Math.random()*0.5+0.2});}}function animate(){ctx.clearRect(0,0,canvas.width,canvas.height);particles.forEach(p=>{p.x+=p.speedX;p.y+=p.speedY;if(mouse.x!=null){const dx=mouse.x-p.x;const dy=mouse.y-p.y;const d=Math.sqrt(dx*dx+dy*dy);if(d<150){p.x-=(dx/d)*((150-d)/150)*0.5;p.y-=(dy/d)*((150-d)/150)*0.5;}}if(p.x<0||p.x>canvas.width)p.speedX*=-1;if(p.y<0||p.y>canvas.height)p.speedY*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fillStyle=`rgba(108,92,231,${p.opacity})`;ctx.fill();});for(let i=0;i<particles.length;i++){for(let j=i+1;j<particles.length;j++){const dx=particles[i].x-particles[j].x;const dy=particles[i].y-particles[j].y;const d=Math.sqrt(dx*dx+dy*dy);if(d<120){ctx.beginPath();ctx.strokeStyle=`rgba(108,92,231,${(1-d/120)*0.3})`;ctx.lineWidth=0.5;ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);ctx.stroke();}}}requestAnimationFrame(animate);}resize();createParticles();animate();window.addEventListener('resize',()=>{resize();createParticles();});window.addEventListener('mousemove',e=>{mouse.x=e.x;mouse.y=e.y;});
+    document.addEventListener('DOMContentLoaded',()=>{const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.1});document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));const btn=document.querySelector('.mobile-menu');const nav=document.querySelector('nav');if(btn&&nav){btn.addEventListener('click',()=>nav.classList.toggle('active'));document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('active')));}});
+  </script>
+  <script src="js/effects.js"></script>
+</body>
+</html>
