@@ -1,2 +1,2 @@
-TOKEN = "YOUR_BOT_TOKEN_HERE"
-ADMIN_ID = 0  # Your Telegram user ID (get it from @userinfobot)
+TOKEN = "8960611991:AAEXx9fIi2VPwBrBsDznzJFctpePbpYrUF0"
+ADMIN_ID = 1272567746
