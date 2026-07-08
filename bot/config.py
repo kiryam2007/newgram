@@ -1,2 +1,2 @@
-TOKEN = "8960611991:AAEXx9fIi2VPwBrBsDznzJFctpePbpYrUF0"
-ADMIN_ID = 1272567746
+TOKEN = "******************************"
+ADMIN_ID = *********
